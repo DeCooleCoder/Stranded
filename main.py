@@ -11,3 +11,4 @@ for x in range(101):
   elif x % 5 == 0:
     print("BUZZ")
   else: print (x)
+    #kan je dit pullen
