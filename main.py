@@ -2,27 +2,33 @@
 
 # all the rooms!
 rooms = {
-  "sleepingRoom" :  {
-    "title" : "Sleepingroom",
-    "description" : "There's a bed in the room. This must be a room for sleeping",
-    "options": ["kitchen", "slaapkamer"],
+  "Home" :  {
+    "title" : "Home",
+    "description" : "You hear your alarm going off,",
+    "options": ["Wake up", "Stay asleep"],
   },
 
-  "kitchen" :  {
-    "title" : "Kitchen",
-    "description" : "Hmmm... what's for dinner?",
-     "options": ["a", "b"]
+  "Wake up" :  {
+      "title" : "You wake up in your bedroom and check your agenda. You see you made an appointment with the professors today to test their new invention out.",
+      "description" : "You should head out right about now… Though the Market has just opened. Maybe they have some good deals? But you wouldn't want to be late ate the lab...",
+      "options": ["Market", "Lab"]
   },
 
-  "forrest" :  {
-    "title" : "Forrest",
-    "description" : "There's a bunch of trees. I am Groot! Says a tree",
-     "options": ["aap", "noot"]
+  "Market" :  {
+    "title" : "Market",
+    "description" : "",
+    "options": ["a", "b"]
   },
 
-  "slaapkamer" :  {
-    "title" : "Slaapkamer",
-    "description" : "Zzzzzz"
+  "The Lab" :  {
+    "title" : "The Lab",
+    "description" : ""
+  },
+    
+  "Crater" :  {
+    "title" : "Crater",
+    "description" : "You start regaining your consciousness. Your blurry vision starts to clear and you observe your surroundings. You are in the middle of a crater filled with junk metal, machine parts and other bits and odds.",
+     "Options": ["aap", "noot"]
   }
 }
 
@@ -36,11 +42,12 @@ def game(room):
   options = currentRoom["options"]
 
   # show to user
-  print(f"You're in the {title}")
+  print(f"{title}")
+  print()
   print(description)
-  print("type the name of the room you would like to go next: ")  
-
-  print(", ".join(options))
+  print("What will you do...?")  
+  print()
+  print("Options: " + ", ".join(options))
   nextRoom = input()
 
   #TODO: check and sanitize input
@@ -48,5 +55,5 @@ def game(room):
   # go to next room
   game(nextRoom)
 
-#start the game from the sleepingroom
-game("sleepingRoom")
+#start the game from the Origin room
+game("Home")
