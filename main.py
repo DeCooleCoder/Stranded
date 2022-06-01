@@ -64,6 +64,13 @@ os.system("clear")
 print("Please enter your name here:")
 name = input("- "),
 
+#definition variables
+n = 'N'
+e = 'E'
+s = 'S'
+w = 'W'
+q = 'Q'
+
 #all the rooms!
 rooms = {
   "Home" :  {
