@@ -130,42 +130,6 @@ def game(room):
   description = currentRoom["description"]  
   extradialogue = currentRoom["extradialogue"]
   options = currentRoom["options"] 
-   
-  #controls
-  wdywd = input('> ')
-  if wdywd.lower() == 'n':
-   if wdywd.capitalize() not in locations[player.location][exits]:
-     delay_print("You cannot go that way!")
-     etc()
-   else:
-    move_action = locations[player.location][N]
-    move_player(move_action)
-  elif wdywd.lower() == 'e':
-   if wdywd.capitalize() not in locations[player.location][exits]:
-    delay_print("You cannot go that way!")
-    etc()
-   else:
-    move_action = locations[player.location][E]
-    move_player(move_action)
-  elif wdywd.lower() == 's':
-    if wdywd.capitalize() not in locations[player.location][exits]:
-        delay_print("You cannot go that way!")
-        etc()
-    else:
-     move_action = locations[player.location][S]
-     move_player(move_action)
-  elif wdywd.lower() == 'w':
-    if wdywd.capitalize() not in locations[player.location][exits]:
-        delay_print("You cannot go that way!")
-        etc()
-    else:
-            move_action = locations[player.location][W]
-            move_player(move_action)
-  elif wdywd.lower() == 'q':
-            quit()
-  else:
-   delay_print('You can\'t do that! Try something else...')
-   etc()
 
   # show to user
   print(f"{title}")
@@ -184,3 +148,50 @@ def game(room):
 
 #start the game from the Origin room
 game("Home")
+
+def game_loop():
+ #controls
+ wdywd = input('> ')
+ if wdywd.lower() == 'n':
+   if wdywd.capitalize() not in locations[player.location][exits]:
+     delay_print("You cannot go that way!")
+     etc()
+   else:
+    move_action = locations[player.location][N]
+    move_player(move_action)
+ elif wdywd.lower() == 'e':
+   if wdywd.capitalize() not in locations[player.location][exits]:
+    delay_print("You cannot go that way!")
+    etc()
+   else:
+    move_action = locations[player.location][E]
+    move_player(move_action)
+ elif wdywd.lower() == 's':
+    if wdywd.capitalize() not in locations[player.location][exits]:
+        delay_print("You cannot go that way!")
+        etc()
+    else:
+     move_action = locations[player.location][S]
+     move_player(move_action)
+ elif wdywd.lower() == 'w':
+    if wdywd.capitalize() not in locations[player.location][exits]:
+        delay_print("You cannot go that way!")
+        etc()
+    else:
+        move_action = locations[player.location][W]
+        move_player(move_action)
+ elif wdywd.lower() == 'g':
+        get()
+ elif wdywd.lower() == 'd':
+        drop()
+ elif wdywd.lower() == 'i':
+        show_inventory()
+ elif wdywd.lower() == 'q':
+            quit()
+ else:
+   delay_print('You can\'t do that! Try something else...')
+   etc()
+
+def quit():
+    global isGameRunning
+    os.system('clear')
