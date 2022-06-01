@@ -1,5 +1,75 @@
 #Idea 1: Your stranded from a time machine and are stranded between timelines So there may be dino's or medieval knights or dragons to conquer
 
+#Plugins
+import random
+import time
+import os
+import sys
+import colorama as cr
+cr.init(autoreset=True)
+
+#Alle antwoorden vor Ja en Nee
+yes = ('y', 'yes', 'all right', 'alright', 'very well', 'ofc', 'ofcourse',
+    'of course', 'sure', 'certainly', 'absolutely','yessir',
+    'why not','yee', 'indeed', 'roger', 'aye','aye aye', 'yeah', 'yah', 'yep', 
+    'yup', 'yuppers', 'mhm', 'okay', 'ok',
+    'righto', 'yea', 'surely', 'ye', 'yuh', 'ya', 'yarr', 'aight')
+no = ('n', 'no', 'nah', 'nope', 'naw', 'nay', 'noway', 'no way', 'never',
+    'nae', 'not at all', 'not really', 'no thanks', 'of course not',
+    'negative', 'nope', 'nuh', 'neh', 'nein', 'hell no', 'nonono',
+    'forget that', 'nya','nuuu')
+
+# Welcome System
+print(f'{cr.Fore.LIGHTBLACK_EX}_' * 60)
+print(' ')
+time.sleep(1)
+print(f"{cr.Fore.BLUE}        █▀▀ ▀▀█▀▀ █▀▀▄ ▀▀█▄ ▄▄  █▀▀▄ █▀▀ █▀▀▄")
+time.sleep(0.3)
+print(f"{cr.Fore.BLUE}        ▀▀█   █   ██▀  ████ █ █ █  █ █▀  █  █")
+time.sleep(0.3)
+print(f"{cr.Fore.BLUE}        ▀▀▀   ▀   ▀ ▀  ▀ ▀  ▀ ▀ ▀▀▀  ▀▀▀ ▀▀▀")
+print(f'{cr.Fore.LIGHTBLACK_EX}_' * 60)
+print(' ')
+time.sleep(1.2)
+print(' ')
+print(f'{cr.Fore.CYAN}{cr.Style.BRIGHT}                       Controls:')
+time.sleep(0.3)
+print(' ')
+print(f'{cr.Fore.CYAN}                    [n]    =  north')
+time.sleep(0.1)
+print(f'{cr.Fore.CYAN}                    [e]    =  east')
+time.sleep(0.1)
+print(f'{cr.Fore.CYAN}                    [s]    =  south')
+time.sleep(0.1)
+print(f'{cr.Fore.CYAN}                    [w]    =  west')
+time.sleep(0.1)
+print(' ')
+print(f'{cr.Fore.CYAN}                    [p]    =  pick up')
+time.sleep(0.1)
+print(f'{cr.Fore.CYAN}                    [d]    =  drop')
+time.sleep(0.1)
+print(f'{cr.Fore.CYAN}                    [i]    =  inventory')
+time.sleep(0.1)
+print(f'{cr.Fore.CYAN}                    [u]    =  use (item)')
+time.sleep(0.1)
+print(f'{cr.Fore.CYAN}                    [t]    =  talk')
+time.sleep(0.1)
+print(' ')
+print(f'{cr.Fore.CYAN}                    [m]    =  show map')
+time.sleep(0.1)
+print(f'{cr.Fore.CYAN}                    [h]    =  help')
+time.sleep(0.1)
+print(' ')
+print(f'{cr.Fore.CYAN}                    [q]    =  quit')
+print(f'{cr.Fore.LIGHTBLACK_EX}_' * 60)
+time.sleep(1)
+print(' ')
+print(f'{cr.Fore.WHITE}                Press [ENTER] to continue')
+time.sleep(0.1)
+print(f'{cr.Fore.WHITE}                [o] to change the options')
+startoroptions = input()
+os.system("clear")
+
 #copy paste room
 # "The Lab" :  {
 #   "title" : "The Lab",
