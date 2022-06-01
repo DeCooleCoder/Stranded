@@ -318,96 +318,203 @@ rooms = {
       "options" : ["Stay in place (and die)", "Jump out of the way"],      
   },
 
-  "" : {
+  "Stay in place (and die)" : {
       "title" : "",
-      "description" : "",
+      "description" : "You stay in your place and die…Seriously, what did you expect? Some secret ending our something?",
       "extradialogue" : "",
-      "options" : [],      
+  },
+
+  "Jump out of the way" : {
+      "title" : "",
+      "description" : "You run towards Dwayne the rock and quickly hop aside for it to break the rock with its vulnerable skull… you monster… The dino which was chasing now laid dead right in front of you as you stare at it’s cold dead body… well… At least the paths opened up. Where will you go next?",
+      "extradialogue" : "",
+      "options" : ["Go Further North", "Go back South"],      
+  },
+
+  "Go Further North" : {
+      "title" : "",
+      "description" : "You head further up north and spot a nice small pond with steam coming from it. You spot something shiny in the pond. It seems like a part of the time machine! O-o",
+      "extradialogue" : "You go into the pond and grab the piece and think to yourself: I should probably head back to the captain now and report back to him… What will you do?",
+      "options" : ["Chill for a bit in the pond", "Go back to the Captain"],      
+  },
+
+  "Chill for a bit in the pond" : {
+      "title" : "",
+      "description" : "You chill in the pond (and heal up completely(if you fought the dino)). You check your watch and see that you're running out of time. You should hurry back now…",
+      "extradialogue" : "",
+      "options" : ["Chill longer in the pond", "Go back to the captain"],      
   },
 
   "" : {
       "title" : "",
-      "description" : "",
+      "description" : " You chill for even longer and start losing track of time. You are really cutting it close now if you don’t leave now you might not be able to make it back in time!!!",
       "extradialogue" : "",
-      "options" : [],      
+      "options" : ["Chill EVEN longer in the pond", "Go back to the captain"],      
   },
 
   "" : {
       "title" : "",
-      "description" : "",
+      "description" : "You completely lose track of time and chill there for eternity. You've become the chill master and decide to live a nice peaceful life in the pod… after a couple of years you start devolving into a human fish and start to peacefully sink into the water whereby it suddenly starts raining… The rain drags you into the ocean where you see the captain still waiting for his boy to one day return… you swim past the ship explore a whole new world before you and live peacefully among the fish (You’ve unlocked the secret Chill ending)",
       "extradialogue" : "",
-      "options" : [],      
   },
 
-  "" : {
+  "Go back to the captain" or "Go back to ship and set sail": {
       "title" : "",
-      "description" : "",
-      "extradialogue" : "",
-      "options" : [],      
+      "description" : "You go back to the Black Pearl and spot the captain waiting for you patiently. The captain tells you his crew found another clue regarding the next piece which is towards the south.",
+      "extradialogue" : "Your at open sea and decide to go to the following area:",
+      "options" : ["Go East(Back to Crater)", "Go West (Dino Jungle Island)", "Go South"],      
   },
 
-  "" : {
+  "Go south" : {
       "title" : "",
-      "description" : "",
+      "description" : "You told the captain to set sail towards the south and spot an island with weird looking buildings. You think to yourself that there might be some sort of civilization going on here and head to land. The captain tells you to go ahead and says he’ll stay behind to search for more clues",
       "extradialogue" : "",
-      "options" : [],      
+      "options" : ["Go back to ship and set sail", "Go into the woods"],      
   },
 
-  "" : {
+  "Go into the woods" : {
       "title" : "",
-      "description" : "",
-      "extradialogue" : "",
-      "options" : [],      
+      "description" : "(If you don’t have a dagger in inventory) To go further into the woods it seems like you may need something sharp to be able to continue… (Maybe a dagger of some sorts that was left behind at the pirate camp).",
+      "extradialogue" : f"(If you do have a dagger in your inventory)You go into the woods and suddenly feel dizzy and faint…OOF (Damn ur really weak).\nYou wake up after a while and feel your hands and feet tied tightly. You wake up in a cell and see weird dudes in old loki looking gear and speak in a language you can’t seem to understand.. after a while they leave you alone since you don’t seem to understand a thing. You look around the dark, dim and grimy cell. You see nothing but dirt, moss and sh*t.\nWhat now? Are you gonna die!? Are you gonna starve to death!?!? Are you gonna be sacrificed to some f*cked up GOD!?!?!??!??! BUT WAIT, calm down {name}…No need for a panic attack…The guards haven’t seemed to search your pockets and it appears you may have something up your sleeve…quite literally…it’s ya dagger…What will you do?",
+      "options" : ["Use your dagger"],      
   },
 
-  "" : {
+  "Use your dagger" : {
       "title" : "",
-      "description" : "",
-      "extradialogue" : "",
-      "options" : [],      
+      "description" : "You use the dagger which suddenly appears to have a switch it turns out it was never turned on to begin with… You turn the dagger on and use it to cut loose. Your FREEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE.\n.\n.\n.\n.\n.",
+      "extradialogue" : " well… kind off… you still have to get out of the cell somehow…\nyou see a guard next to the cell sleeping with his boxers down…how- why- wha-...ignoring that, he seems to have keys in his hand…what will you do?",
+      "options" : ["KILL HIM!", "Try to pry the keys out of his hands"],      
   },
 
-  "" : {
+  "KILL HIM!" : {
       "title" : "",
-      "description" : "",
+      "description" : "You kill the guard…but he managed to screech tao alort thu other guardas and onw you hev ta fihgt thom oar dies trying…you die trying… (it seems as if the person who wrote this had a stroke… just ignore it please…you’ll just hurt yourselves and your last two brain cells will fade to dust by reading this leaving you with one functional brain cell #mathematics #QuickMaths…ROASTED!!!!!)",
       "extradialogue" : "",
-      "options" : [],      
   },
 
-  "" : {
+  "Try to pry the keys out of his hands" : {
       "title" : "",
-      "description" : "",
-      "extradialogue" : "",
-      "options" : [],      
+      "description" : "You pry the keys out of his hands without waking the guard up and open up the locked cell door…what the h*ll are you gonna do now that you are once again a free human!?",
+      "extradialogue" : "(well first try to get past the guards except if you wanna die)",
+      "options" : ["Make a run for it", "Slowly AND quietly pass the guards"],      
   },
 
-  "" : {
+  "Make a run for it" : {
       "title" : "",
-      "description" : "",
-      "extradialogue" : "",
-      "options" : [],      
+      "description" : "You run away as fast as you can…you get intercepted by the guards…they call the army and generals…let’s just say they weren’t nice to you, m’kay? (please for your sanity and ours, don’t question it) you start running in any direction you can and see a building in the distance in which you can take shelter. you B-Line straight to the building and seem to be able to shake those guards of your tail.",
+      "extradialogue" : "You arrive at the building and spot lots and lots of people who seem to be dressed in long robes and are reading books?? You appear to have arrived at a sort of library? There’s someone who looks like Einstein and another guy who’s painting in a corner which seems to be Leonardo Da Vinci and see someone else who seems like Will Smith??? What’s he doing here? What will you do?",
+      "options" : ["Talk to Einstein", "Talk to Da Vinci", "Talk to WILL FREAKING SMITH NOW!!!"],      
   },
 
-  "" : {
+  "Slowly AND quietly pass the guards" : {
       "title" : "",
-      "description" : "",
-      "extradialogue" : "",
-      "options" : [],      
+      "description" : "You walk veeeeeeeeeeeeeery slooooooooooooooowly and barely manage to sneak past the guards and head to what seems to be an exit. you reached the exit but suddenly hear an alarm going off o-o (THEY HAVE ALARM SYSTEMS???) you start running in any direction you can and see a building in the distance in which you can take shelter. you B-Line straight to the building and seem to be able to shake those guards of your tail.",
+      "extradialogue" : "You arrive at the building and spot lots and lots of people who seem to be dressed in long robes and are reading books?? You appear to have arrived at a sort of library? There’s someone who looks like Einstein and another guy who’s painting in a corner which seems to be Leonardo Da Vinci and see someone else who seems like Will Smith??? What’s he doing here? What will you do?",
+      "options" :["Talk to Einstein", "Talk to Da Vinci", "Talk to WILL FREAKING SMITH NOW!!!"],     
   },
 
-  "" : {
+  "Talk to Einstein" : {
       "title" : "",
-      "description" : "",
-      "extradialogue" : "",
-      "options" : [],      
+      "description" : "You head towards Einstein who seems to be working on a formula which doesn’t seem to be complete yet. Einstein sees you and greets you:",
+      "extradialogue" : f"Einstein: Well and who might you be? Ah welcome to the school of Athens {name} All of us who gather here love to study and discuss lots of science together or we get together for a nice chat once in a while… Anyway, enough about this place. To what do I owe the pleasure of your visit here?",
+      "options" : ["(Truth) I’ve come to seek shelter from guards", "(Lie) I’ve come to seek knowledge"],      
   },
 
-  "" : {
+  "Talk to Da Vinci" : {
       "title" : "",
-      "description" : "",
-      "extradialogue" : "",
-      "options" : [],      
+      "description" : "You head towards Da Vinci who seems to be working on a painting which doesn't seem to be finished yet. Da Vinci sees you and greets you:",
+      "extradialogue" : f"Da Vinci: Well and who might you be? Ah welcome to the school of Athens {name} All of us who gather here love to study and discuss lots of science together or we get together for a nice chat once in a while… Anyway, enough about this place. To what do I owe the pleasure of your visit here?",      "options" : ["(Truth) I’ve come to seek shelter from guards", "(Lie) I’ve come to seek knowledge"],      
   },
+
+  "Talk to WILL FREAKING SMITH NOW!!!" : {
+      "title" : "",
+      "description" : "You head towards Will Smith who seems to be doing Will Smith things. Will Smith sees you and greets you:",
+      "extradialogue" : f"Will Smith: Well and who might you be? Ah welcome to the school of Athens {name} All of us who gather here love to study and discuss lots of science together or we get together for a nice chat once in a while… Anyway, enough about this place. To what do I owe the pleasure of your visit here?",
+      "options" : ["(Truth) I’ve come to seek shelter from guards", "(Lie) I’ve come to meet you"],      
+  },
+
+  "Truth:" : {
+      "title" : "",
+      "description" : "Well that’s a pretty shocking announcement isn’t it… I could turn you in and get a handsome reward so… I’ll give you a chance to prove yourself by doing a QUIZ!!! if you fail I'll tell you but if you succeed you are welcome to stay here and be a part of the school of Athens. so… shall we begin?",
+      "extradialogue" : "Question 1:\nWhat is missing from Einstein’s Formula? (E=2)\na)Minecraft\nb)Mc\nc)EEEEEEEeeeee\nd)=\n\nQuestion 2:\nWhat is Will Smith’s last name?\na)Bald\nb)SmIth\nc)Smith\nd)One Punch Man\n\nQuestion 3:\nWaar is Leonardo Da Vinci Bekend voor?: (Editors note: ze zijn allemaal correct)\na)Zijn Anatomische Kennis\nb)Als Uitvinder\nc)Als Architect\nd)Als Natuurkundige",
+      "options" : ["bcb, dab, cad, dca, dbc"],      
+  },
+
+  "Lie" : {
+      "title" : "",
+      "description" : "Einstein/Da Vinci/Will Smith: Now don't lie to me. Tell me, why are you here",
+      "extradialogue" : "",
+      "options" : ["Tell the truth"],      
+  },
+
+  "dab" or "cad" or "dca" or "dbc" : {
+      "title" : "",
+      "description" : "Well… I think you could do better so how about we try again? I know you know it so let’s just get it right this time shall we?",
+      "extradialogue" : "",
+      "options" : ["Truth"],      
+  },
+
+  "bcb" : {
+      "title" : "",
+      "description" : "Einstein/Da Vinci: Wow I guess you’re smarter than you seem! You seem to even know the answer to my/Einstein's Formula u really smart! it’s almost as if you’re from the future or something and are able to search up the answers to the questions. We can’t let you go empty handed ofcourse so here take this!\n\n*You received the second Part of the machine!*\n\nWe found it lying around in the bushes and thought it’s part of an elaborate machine. Well we hope to see you again you are on your way now!",
+      "extradialogue" : "Will Smith: Nice you smart. you are very smart… So uhhh… I found this shiny thing and since you completed the quiz i thought i should give it to you as a reward here ya go! You received the 2nd Piece of the Machine! aight well i’ll see ya around!\n\nYou stand there in the school and head out to go back to the ship. Once you arrive at the ship the captain tells you he got some good news for ye. You go aboard and check it out Captain  Edward ‘Moose’ Teach found the third piece of the machine while you were out and about!!! WHAT?!! you’ve got all the parts now and are ready to head back to the crater. You start sailing back to the ocean whilst the captain asks for your direction which way will you go?",
+      "options" : ["South(School of Athens)", "West (Crater and Pirate camp)", "East (Dino Island)"],      
+  },
+
+  "West (Crater and Pirate camp)" : {
+      "title" : "",
+      "description" : "You head West and arrive back at the beach where will you go next?",
+      "extradialogue" : "",
+      "options" : ["Pirate Camp", "Back to the Time Machine"],      
+  },
+
+  "Back to the Time Machine" : {
+      "title" : "",
+      "description" : "You head to the crater and check the manual. You realize that it seems like a huge project and can’t seem to do it on your own in the amount of time that’s left. You check your watch and it says you only have 8 hours left to figure this out… If only there were smart people who would be able to help you with rebuilding the machine…",
+      "extradialogue" : "",
+      "options" : ["Go back to South(School of Athens)"],      
+  },
+
+  "Go back to South(School of Athens)" : {
+      "title" : "",
+      "description" : "You head back to Athens and arrived there safe and sound. While going to the school of Athens you think of your experience so far and what you think of it and look back at the friends you’ve made along the way. You finally Arrive at the School of Athens and ask the scholars for help with rebuilding the time machine. They agree because you’ve completed the uncompletable quiz and would gladly help a genius such as yourself. You head back and board the ship and go back all the way to the crater… you think to yourself whilst on the boat what a wild adventure you’ve been on and start to question your life… have I really just wasted some of my time i’ll never get back again? yes… yes I have… Was it worth it? Probably not, but in the end did I have fun? That's only a question YOU dear player can answer… ",
+      "extradialogue" : "You arrive at the crater where the Scholars try to encrypt the language and fix up the time machine. you have 1 Hour left, how will you spend it? Will you say goodbye and greet everyone for one last time or just ditch them?",
+      "options" : ["Ditch them", "Say your goodbye’s"],      
+  },
+
+  "Ditch them" : {
+      "title" : "",
+      "description" : "You try to ditch them but the 4th wall has been broken and you get stopped by the creators of the game. you are not able to ditch them please greet them…",
+      "extradialogue" : "",
+      "options" : ["Say your goodbye’s"],      
+  },
+
+  "Say your goodbye’s" : {
+      "title" : "",
+      "description" : "you say your goodbye to everyone and thank the captain for his immense help on this trip. The captain says: No worries Laddy. I'm glad I'm able to help if it ain’t on the name of the Moose I’ll always be with ye… I'll miss ya kiddo. You say your goodbyes to the crew who helped you reach your destination and eventually say your goodbyes to the scholars who helped you fix the machine. You set your last step into the machine and as you do you wave to all the people who’ve gathered around you you step into the machine and start pulling the levers and pressing the buttons as it says in the manual that was written by professor Hunter. There’s a white flash before you and you slowly open your eyes… you smell a big stinky odor coming from outside and see the professors standing right before you YOU'VE MADE IT BACK!!! You’re finally back home… ",
+      "extradialogue" : "Professor Hunter: Welcome back! How was the trip? Did my manual help at all? I’m glad you’ve made it safely back. It’s good to see you again. you can go through the left door exit to try and avoid Prof JerkMoose so you can end this nice and quietly! we’ll ask you back for a later date to answer some of our questions. you must be exhausted you may go now!",
+      "options" : ["Leave Quietly", "Go by Professor JerkMoose"],      
+  },
+
+  "Leave Quietly" : {
+      "title" : "",
+      "description" : "Professor JerkMoose: Now hold up my Padawan where do you think you’re going?",
+      "extradialogue" : f"you spot a parrot in a cage next to him it seems very familiar...IT’S THE PARROT FROM THE TENT!!\n\n {name}: HEY! THAT'S THE PARROT THAT RAN AWAY FROM ME IN THE WEIRD TIME ZONE YOU SENT ME TO!!!\n Professor JerkMoose: Ooooh! That parrot was from my great great great something grandfather! Edward ‘Moose’ Teach, otherwise known as BLACKBEARD! Most feared pirate in the seven seas! Captain of the BLACK PEARL! He is my HERO! And I learned my cussing from his journal! He was cursing a lot about some idiot that got stranded and needed some weird*ss machine fixed but I don’t get that part…Anyways, it’s good that you're back! Go home, my Padawan, tomorrow's a new day, and of course, A BRAND NEW ADVENTURE!!!\n\n",
+      "options" : ["Go Home"],      
+  },
+
+  "Go by Professor JerkMoose" : {
+      "title" : "",
+      "description" : f"Professor JerkMoose: Why hello, my young Padawan.\nWhile walking to Professor JerkMoose, you spot a parrot in a cage next to him that seems very familiar...IT’S THE PARROT FROM THE TENT!!\n\n {name}: HEY! THAT'S THE PARROT THAT RAN AWAY FROM ME IN THE WEIRD TIME ZONE YOU SENT ME TO!!!\n Professor JerkMoose: Ooooh! That parrot was from my great great great something grandfather! Edward ‘Moose’ Teach, otherwise known as BLACKBEARD! Most feared pirate in the seven seas! Captain of the BLACK PEARL! He is my HERO! And I learned my cussing from his journal! He was cursing a lot about some idiot that got stranded and needed some weird*ss machine fixed but I don’t get that part…Anyways, it’s good that you're back! Go home, my Padawan, tomorrow's a new day, and of course, A BRAND NEW ADVENTURE!!!\n\n",
+      "extradialogue" : "",
+      "options" : ["Go Home"],      
+  },
+
+  "Go Home" : {
+      "title" : "",
+      "description" : "You head out onto the streets heading back home. Once home you stretch out and lay in bed… you think to yourself… man… that felt like a fantasy dream… and fell asleep!\n\n\n",
+      "extradialogue" : "We hope you enjoyed our Text Adventure game\n\n\bJoshua L. & Bo H. 4H3 2021-2022 :)",
+  }
 }
 
 def etc():
