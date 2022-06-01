@@ -113,6 +113,14 @@ rooms = {
   }
 }
 
+def etc():
+    print(f'\n{cr.Fore.WHITE}Press [ENTER] to continue')
+    input()
+
+#definition player movement
+def move_player(move_action):
+    player.location = move_action
+ 
 #the game "engine"
 def game(room):
   currentRoom = rooms[room]
@@ -122,6 +130,42 @@ def game(room):
   description = currentRoom["description"]  
   extradialogue = currentRoom["extradialogue"]
   options = currentRoom["options"] 
+   
+  #controls
+  wdywd = input('> ')
+  if wdywd.lower() == 'n':
+   if wdywd.capitalize() not in locations[player.location][exits]:
+     delay_print("You cannot go that way!")
+     etc()
+   else:
+    move_action = locations[player.location][N]
+    move_player(move_action)
+  elif wdywd.lower() == 'e':
+   if wdywd.capitalize() not in locations[player.location][exits]:
+    delay_print("You cannot go that way!")
+    etc()
+   else:
+    move_action = locations[player.location][E]
+    move_player(move_action)
+  elif wdywd.lower() == 's':
+    if wdywd.capitalize() not in locations[player.location][exits]:
+        delay_print("You cannot go that way!")
+        etc()
+    else:
+     move_action = locations[player.location][S]
+     move_player(move_action)
+  elif wdywd.lower() == 'w':
+    if wdywd.capitalize() not in locations[player.location][exits]:
+        delay_print("You cannot go that way!")
+        etc()
+    else:
+            move_action = locations[player.location][W]
+            move_player(move_action)
+  elif wdywd.lower() == 'q':
+            quit()
+  else:
+   delay_print('You can\'t do that! Try something else...')
+   etc()
 
   # show to user
   print(f"{title}")
