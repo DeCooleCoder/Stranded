@@ -84,18 +84,20 @@ rooms = {
       "title" : "",
       "description" : "",
       "extradialogue" : "",
-      "options" : [],
+      "options" : []
   },
 
   "Wake up" :  {
       "title" : "You wake up in your bedroom and check your agenda. You see you made an appointment with the professors today to test their new invention out.",
       "description" : "You should head out right about now…you wouldn't want to be late at the lab...",
-      "extradialogue": "Note: Press S to Stay at Home and Press N to go to the Lab",
-      "options": ["Lab / Stay at Home"],
+      "extradialogue": "",
+      "options": ["Lab"],
   },
 
   "Stay at Home" : {
-      "title" : ""
+      "title" : "",
+      "description" : "",
+      "extradialogue" : ""
   },
 
   "Lab" :  {
@@ -105,21 +107,48 @@ rooms = {
     "options": ["THE SMART AND AMAZING PROFESSOR's office", "The Man's office"],
   },
 
-"The Man's office" : {
+"The Man's office" or "Talk to professor JerkMoose" : {
       "title" : "",
-      "description" : "",
-      "extradialogue" : "",
-      "options" : [],    
+      "description" : "Professor JerkMoose: Hello my padawan, have you come to bargain?\n\nProfessor JerkMoose: Aaaaaah, it is you.....The experiment that's stupid enough to come and try our machine...\n\nProfessor JerkMoose: Anyways, again welcome to our lab! This is where we do all of our very safe and totally not illegal experiments and take our jobs very seriously (not). We have never made a SINGLE mistake so you don’t have to worry about your safety at all. Maybe one or two mistakes….a few more then two…. OK, a lot of mistakes, BUT this experiment is safer than anything you’ve ever done before this AND we have insurance that covers everything you need, except maybe being stranded throughout time, but that would never happen right?!?!\n\nProfessor JerkMoose: Now please….GET THE F OUT OF HERE B*TCH, AND SPEAK TO THE OTHER DUMBASS HERE!",
+      "extradialogue" : ".\n.\n.\n.\n.\n(A friendly reminder of Prof. Hunter; If you haven’t spoken to the other professor yet, please do, if only for your mental health (and mine).)",
+      "options" : ["Speak to professor Hunter", "Die"],    
 },
 
- "THE SMART AND AMAZING PROFESSOR's office" :  {
+    "Die" : {
+        "title" : "",
+        "description" : "You die...What did you expect? Some hidden achievement or some sh*t?",
+        "extradialogue" : ""
+    },
+
+ "THE SMART AND AMAZING PROFESSOR's office" or "Speak to professor Hunter" :  {
    "title" : "THE SMART AND AMAZING PROFESSOR's office",
    "description" : "Professor Hunter: Hello and welcome to our lab. I’m professor Hunter and this is where we do all of our very scientific experiments and take our jobs very seriously. We have never made a SINGLE mistake so you don’t have to worry about your safety ;) So… what was your name again?",
-   "extradialogue" : f"Professor Hunter: ...Riiight gotcha… so… {name} Have you met the other professor yet? Note: Type M to speak to professor Jerkmoose and Press N to continue talking to professor Hunter",
-   "options" : ["M", "N"]
+   "extradialogue" : f"Professor Hunter: ...Riiight gotcha… so… {name} Have you met the other professor yet?",
+   "options" : ["Talk to professor JerkMoose", "Continue talking to professor Hunter"]
  },
+
+  "Continue talking to professor Hunter" : {
+      "title" : "",
+      "description" : "Professor Hunter: Alright than you may come right this way to THE EXPERIMENT *curtains slowly reveal a HUUUUUGE dong*\n\nProfessor Hunter: oops that's a project professor JerkMoose is working on moving on…\nWelcome to our biggest project yet THE TIME MACHINE!!!\nYou may enter the machine but be cautious of the wires!!\n\nProfessor JerkMoose:, because if one gets killed, you die as well…MWAHAHAHAHAHAHA!!!!\n\n(Friendly reminder from prof. Hunter: Please ignore him, he’s here for personal reasons….please don’t ask)\n\nWe're going to send you to the past and zap you back in exactly 24 hours so come back to the exact spot within that time or else you’ll be left Stranded o-o. (Here have this watch to check the time when you’ve made the jump) You received an old ragged looking watch, it’s 09:38:42am in the morning and counting.",
+      "extradialogue" : "Professor Hunter: Here, have this just in case…\n\nYou received the Manual!!\n\nI’m not sure what Professor JerkMoose has done with the machine but it can’t be anything good so I'll just give you this in case anything bad happens…You’ll probably be fine anyways but just in case you never know… ¯\_(ツ)_/¯",
+      "options" : ["Enter the Machine (AND DIE, MWAHAHAHA)", "Do a 180 and go through the exit (Footnote; ignore the AND DIE)"]
+  },
+
+  "Do a 180 and go through the exit (Footnote; ignore the AND DIE)" : {
+      "title" : "You start moving towards the exit",
+      "description" : "Professor JerkMouse: HEEEEYYYY, YAAA**EHOOO LEE, GET THE F BACK AERE, GET YAERE SH*TE AND STEP INTO THE F***IN’ MACHINE, AND BE GLAD A WON’T KICK YAERE A**E FROM ‘ERE TA M*****F***IN’ AFRIKA, B*TCH!!!!!! AN’ DONTAY DEERE TRYNA STEALIN'' OUR HIGHLY, HIGHLY SOPHISTICATED WATCH, YA B*STERD!!!",
+      "extradialogue" : "You get into the machine against your own will (and partly due to the crazy professor) and get ready for the worst",
+      "options" : ["Enter the Machine (AND DIE, MWAHAHAHA)"]
+  },
+
+  "Enter the Machine (AND DIE, MWAHAHAHA)" : {
+      "title" : "",
+      "description" : "You enter the suspiciously wobbly, high-tech, sophisticated  machine and get ready for the testing trip (P.S. I got no f-ing clue what this is -prof JerkMoose.)",
+      "extradialogue" : "You've entered the time machine\n\nYou hear a switch being flipped and see a bunch of lights flashing before you and suddenly feel weightless and slowly lose consciousness…",
+      "options" : ["Continue the story"]
+  },
     
-  "Crater" :  {
+  "Continue the story" :  {
     "title" : "Crater",
     "description" : "Some time has passed and you start regaining your consciousness. Your blurry vision starts to clear and you observe your surroundings. You are in the middle of a crater filled with junk metal, machine parts and other bits and odds. you look at your watch and read 12:05:23pm you’ve been unconscious for 3 HOURS!!!",
     "extradialogue": "You decided to look around and see if you could find anything useful. You found the manual prof. Hunter gave you! There is a sticky note on it saying “Because this is our HIGHLY, SOPHISTICATED and BEAUTIFUL time traveling machine, this magnificent piece of art would never EVER go kaputt. So if you pick up this manual and need to repair MY BEAUTIFUL and AMAZING machine, then you are a dumb*ss who can’t even ride a F-ING bike…You’re welcome for the compliment-prof. JerkMoose” To repair the time machine you need these three items in case of a crash which is highly unlikely of course, because this machine was made by the two most renowned geniuses of the world, but just in case which is again HIGHLY unlikely to happen.",
@@ -552,50 +581,3 @@ def game(room):
 
 #start the game from the Origin room
 game("Home")
-
-def game_loop():
- #controls
- wdywd = input('> ')
- if wdywd.lower() == 'n':
-   if wdywd.capitalize() not in locations[player.location][exits]:
-     delay_print("You cannot go that way!")
-     etc()
-   else:
-    move_action = locations[player.location][N]
-    move_player(move_action)
- elif wdywd.lower() == 'e':
-   if wdywd.capitalize() not in locations[player.location][exits]:
-    delay_print("You cannot go that way!")
-    etc()
-   else:
-    move_action = locations[player.location][E]
-    move_player(move_action)
- elif wdywd.lower() == 's':
-    if wdywd.capitalize() not in locations[player.location][exits]:
-        delay_print("You cannot go that way!")
-        etc()
-    else:
-     move_action = locations[player.location][S]
-     move_player(move_action)
- elif wdywd.lower() == 'w':
-    if wdywd.capitalize() not in locations[player.location][exits]:
-        delay_print("You cannot go that way!")
-        etc()
-    else:
-        move_action = locations[player.location][W]
-        move_player(move_action)
- elif wdywd.lower() == 'g':
-        get()
- elif wdywd.lower() == 'd':
-        drop()
- elif wdywd.lower() == 'i':
-        show_inventory()
- elif wdywd.lower() == 'q':
-            quit()
- else:
-   delay_print('You can\'t do that! Try something else...')
-   etc()
-
-def quit():
-    global isGameRunning
-    os.system('clear')
